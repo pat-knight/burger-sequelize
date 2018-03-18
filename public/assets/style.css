@@ -1,0 +1,23 @@
+body {
+    background-image: url('./burger.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.burger-menu {
+    float: left;
+}
+.devoured-burgers {
+    float: right;
+}
+.add-section {
+    width: 40%;
+    text-align: center;
+    margin: auto;
+}
+
+.burger-list{
+    margin: 5px;
+    color: #fff;
+}

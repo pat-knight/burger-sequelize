@@ -1,0 +1,8 @@
+<li class="row burger-list">
+    {{#if devoured}}
+    <button type="button" class="btn btn-success devour" data-id="{{id}}" data-ordered="{{devoured}}">Eat Me!</button>
+    <span>{{burger_name}}</span>
+    {{else}}
+    <span>{{burger_name}}</span>
+    {{/if}}
+</li>

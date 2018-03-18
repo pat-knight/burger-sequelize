@@ -1,0 +1,33 @@
+<div class="container">
+    <header class="text-center">
+        <h1>Burger House</h1>
+    </header>
+    <div class="row">
+        <div class="col">
+            <div class="burger-menu">
+                <h3>Burger Menu</h3>
+                {{#each burgers}} {{#unless devoured}} {{> sort_burger devoured=true}} {{/unless}} {{/each}}
+            </div>
+        </div>
+        <div class="col">
+            <div class="devoured-burgers">
+                <h3>Devoured Burgers</h3>
+                <ul>
+                    {{#each burgers}} {{#if devoured}} {{> sort_burger devoured=false}} {{/if}} {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row add-section">
+        <div class="col">
+            <h3>Add a Burger</h3>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="enter burger" aria-label="burger name" id="burger-name">
+                <div class="input-group-append">
+                    <button class="btn" type="button" id="addNew">Add Burger</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
