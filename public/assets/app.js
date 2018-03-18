@@ -17,7 +17,7 @@
         });
 
         $(".devour").on("click", e => {
-            $.ajax("/api/burgers/" + $(e.target).data("id"), {
+            $.ajax(`/api/burgers/${$(e.target).data("id")}`, {
                 type: "PUT",
                 data: { devoured: $(e.target).data("devoured") }
             }).then(data => location.reload());
